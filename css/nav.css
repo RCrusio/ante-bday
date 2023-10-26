@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  
+  .navbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    font-family: "Poppins", sans-serif;
+    background-color: #06283D;
+    opacity: .9;
+    z-index: 1;
+  }
+  
+  .navbar .navbar-header {
+    display: inline;
+  }
+  
+  .navbar .navbar-header .navbar-title {
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    
+  }
+  
+  .navbar .navbar-btn {
+    display: none;
+  }
+  
+  .navbar .navbar-links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+    margin-right: 50px;
+    
+  }
+  
+  .navbar .navbar-links a {
+    display: inline-block;
+    padding: 13px 15px 13px 15px;
+    text-decoration: none;
+    color: #efefef;
+    border-radius: 5px;
+  }
+  
+  .navbar .navbar-links a:hover {
+    background-color: rgba(0, 0, 0, 0.521);
+    transition: .8s;
+  }
+  
+  .navbar > #navbar-check {
+    display: none;
+  }
+
+  .img{
+    width: 120px;
+  }
+  
+  @media (max-width:700px) {
+    .navbar > .navbar-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .navbar > .navbar-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .navbar > .navbar-btn > label:hover,.navbar  #navbar-check:checked ~ .navbar-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .navbar > .navbar-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .navbar > .navbar-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #0a3855;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .navbar > .navbar-links > a {
+      display: block;
+      width: 100%;
+    }
+    .navbar > #navbar-check:not(:checked) ~ .navbar-links {
+      height: 0px;
+    }
+    .navbar > #navbar-check:checked ~ .navbar-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

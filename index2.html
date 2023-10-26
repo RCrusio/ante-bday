@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="img/favcon.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/quicktop.js"></script>
+    <script src="https://kit.fontawesome.com/82381391ff.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+        
+
+      <section class="secA">
+        <div class="leftA">
+            <h1 class="intro">Hi there <br> Pleasure to meet you</h1>
+        </div>
+
+        <div class="rightA">
+        <center>
+            <img src="img/hi.png" class="imgintro">
+        </center>
+        </div>
+      </section>
+
+      <section class="secB">
+        <center><h1 id="about" class="title">About</h1>
+        <div class="content-div-secB reveal">
+          <div class="leftB">
+
+              <center>
+                <img src="img/profile.png" class="profileimg">
+              </center>
+            </div>
+          
+            <div class="rightB">
+            <h2 class="h2">Chaylenmie "Chay" E. Balaba</h2>
+            <P class="p">Living in Barangay Dologon Maramag City in the Province of Bukidnon and currently a Bachelor of Science
+                         in Human Economics student in Central Mindanao University. 
+            <p class="p"> She is a person who is a Humourus, Fighter, Family Oriented, Kind, Ambivert, Smart, and most of all God Fearing </p>
+            <p class="p"> This Ante Maninay is a person you can rely on in dire times.</p>
+          </div>
+        </div>
+      </center>
+      </section>
+
+
+      <section class="secC">
+      <center><h1 id="skills" class="title">Known For</h1></center>
+      <div class="skill-container reveal  ">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="/img/k6.png" class="skill-icon">
+            </div>
+            <h3>Cooking</h3>
+          </div>
+          <p>Inasal Cooker at Tanglad Super99</p>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="/img/k1.png" class="skill-icon">
+            </div>
+            <h3>Dish Washing</h3>
+          </div>
+          <p>Ever since a kid XD</p>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="/img/k2.png" class="skill-icon">
+            </div>
+            <h3>K-drama</h3>
+          </div>
+          <p>Super Adik kaayo hahaha</p>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="/img/k3.png" class="skill-icon">
+            </div>
+            <h3>Humourus</h3>
+          </div>
+          <p>Di ka maka bati og awkwardness haha</p>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+              <div class="skill-img">
+                <img src="/img/k5.png" class="skill-icon">
+              </div>
+              <h3>Memes</h3>
+            </div>
+            <p>Madala rag memes ang kalaay</p>
+          </div>
+
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="/img/k4.png" class="skill-icon">
+            </div>
+            <h3>Fighter</h3>
+          </div>
+          <p>Biskan kapoy, ika-reklamo, ika-katawa, ika-hilak, di jud mo give up sheeesh</p>
+        </div>
+      </div>
+      </section>
+
+      
+
+      <section class="secE">
+        <center><h1 id="contact" class="gal title">Gift Card</h1>
+
+        <a href="index3.html">
+          <div class="contact-info reveal">
+
+      
+            <div class="contact">
+              <i class="contact-icon fas fa-gift"></i>
+              <h3>Open me!</h3>
+            </div>
+          </div>
+        </a>
+        </center>
+      </section>
+
+      <script>
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+          
+          for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+      </script>
+      
+      <section class="footer">
+        <div class="wrap">
+          <a class="icons" href="https://www.facebook.com/profile.php?id=100008309825267"><i class="fa-brands fa-facebook-f"></i></a>
+          
+        </div>
+      </section>
+
+</body>  
+</html>  

@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+.title{
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*SEC A*/
+
+.secA{
+    width: 100%;
+    height: 768px;
+    background-color: #35858B;
+    padding: 0px 50px;
+    color: #eeeeee;
+    font-family: 'Courier New', Courier, monospace;
+       
+}
+
+.leftA{
+    width: 50%;
+    float: left;
+    padding: 15% 10%;
+    font-size: 30px;
+    /*background-color: red;*/
+}
+
+
+
+.rightA{
+    width: 50%;
+    float: right;
+    padding: 0px 0px ;
+    margin: 0px;
+   /* background-color: blue;*/
+}
+
+
+/*----------------------------------------------------------------------*/
+/*SEC B*/
+.secB{
+    width: 100%;
+    height: 868px;
+    background-color: #eeeeee;
+    padding: 50px 50px;
+    color: #363636;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+.leftB{
+    width: 50%;
+    float: left;
+    padding: 5% 10%;
+    font-size: 30px;
+    /*background-color: red;*/
+}
+
+.rightB{
+    width: 50%;
+    float: left;
+    padding: 5% 7%;
+    font-size: 20px;
+    /*background-color: blue;*/
+    text-align: justify;
+}
+
+.list_service{
+    font-weight: bold;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*Sec C*/
+.secC{
+    width: 100%;
+    height: auto;
+    background-color: #35858B;
+    padding: 80px 50px;
+    color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gal{
+    color: rgb(53, 53, 53);
+}
+
+/*----------------------------------------------------------------------*/
+/*Sec D*/
+.secD{
+    width: 100%;
+    height: auto;
+    background-color: #eeeeee;
+    padding: 50px 50px;
+    color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*Sec E*/
+.secE{
+    width: 100%;
+    height: auto;
+    background-color: #eeeeee;
+    padding: 50px 50px;
+    color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.secE h1{
+    color: rgb(53, 53, 53);
+}
+
+.secE a{
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------*/
+/*Footer section*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #06283D;
+  }
+
+/*----------------------------------------------------------------------*/
+/*image css*/
+
+.imgintro{
+    width: 575px;
+}
+
+.profileimg{
+    width: 300px;
+    -webkit-box-shadow: 0px 2px 49px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 49px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 49px 4px rgba(0,0,0,0.75);
+    border-radius: 50%;
+}
+
+/**/
+/*Content Reveal transition*/
+.reveal{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/*----------------------------------------------------------------------*/
+/*responsive css*/
+
+@media (max-width:1200px) {
+    section{
+        width: 90%;
+    }
+    
+    .leftA{
+        font-size: 20px;
+    }
+    .imgintro{
+        width: 100%;
+    }
+
+    .profileimg{
+        width: 100%;
+    }
+    
+    .h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:700px) {
+    section{
+        width: 90%;
+    }
+    .secA{
+        padding: 60px 50px 100px;
+    }
+    .imgintro{
+        width: 60%;
+    }
+    .secC{
+        padding: 8%;
+    }
+
+    .leftA{
+        float: none;
+        width: 100%;
+        padding: 30px  50px;
+        font-size: 20px;
+    }
+
+    .leftB{
+        float: none;
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .rightA{
+        float: none;
+        width: 100%;
+    }
+
+    .rightB{
+        float: none;
+        width: 100%;
+    }
+
+
+    .profileimg{
+        width: 200px;
+    }
+
+    .h2{
+        font-size: 20px;
+    }
+    .p{
+        font-size: 15px;
+    }
+    .intro{
+    font-size: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    .imgintro{
+        width: 300px;
+    }
+}
+
